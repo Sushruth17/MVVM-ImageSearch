@@ -1,6 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext.kotlin_version = "1.4.21"
+    ext.hiltVersion = '2.28.3-alpha'
     repositories {
         google()
         jcenter()
@@ -27,3 +28,11 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+// Define versions in a single place
+ext {
+    // App dependencies
+    glideVersion = '4.11.0'
+    hiltAndroidXVersion = '1.0.0-alpha02'
+    pagingVersion = '3.0.0-alpha05'
+    retrofitVersion = '2.9.0'}
