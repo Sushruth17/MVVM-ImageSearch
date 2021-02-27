@@ -1,4 +1,4 @@
-package seventeen.mvvm.imagesearchapp
+package seventeen.mvvm.imagesearchapp.data
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
