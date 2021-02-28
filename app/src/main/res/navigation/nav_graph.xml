@@ -8,5 +8,18 @@
         android:id="@+id/galleryFragment2"
         android:name="seventeen.mvvm.imagesearchapp.ui.gallery.GalleryFragment"
         android:label="fragment_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFragment2_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="seventeen.mvvm.imagesearchapp.ui.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="photo"
+            app:argType="seventeen.mvvm.imagesearchapp.data.UnsplashPhoto" />
+    </fragment>
 </navigation>
