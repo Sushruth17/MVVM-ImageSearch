@@ -4,5 +4,5 @@ import seventeen.mvvm.imagesearchapp.data.UnsplashPhoto
 
 
 data class UnsplashResponse(
-    val results: List<UnsplashPhoto>
+        val results: List<UnsplashPhoto>
 )
