@@ -27,14 +27,11 @@ class UnsplashPhotoAdapter(private val listener: OnItemClickListener):
         if (currentItem != null){
             holder.bind(currentItem)
         }
-
-
     }
 
 
     inner class PhotoViewHolder(private val binding: ItemUnsplashPhotoBinding):
         RecyclerView.ViewHolder(binding.root){
-
 
         init {
             binding.root.setOnClickListener {
@@ -60,7 +57,6 @@ class UnsplashPhotoAdapter(private val listener: OnItemClickListener):
                 textViewUserName.text = photo.user.username
             }
         }
-
     }
 
     interface OnItemClickListener{
@@ -78,5 +74,4 @@ class UnsplashPhotoAdapter(private val listener: OnItemClickListener):
                 oldItem == newItem
         }
     }
-
 }

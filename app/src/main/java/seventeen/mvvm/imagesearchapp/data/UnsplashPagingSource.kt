@@ -1,7 +1,6 @@
 package seventeen.mvvm.imagesearchapp.data
 
 import androidx.paging.PagingSource
-import androidx.paging.PagingState
 import retrofit2.HttpException
 import seventeen.mvvm.imagesearchapp.api.UnsplashApi
 import java.io.IOException
